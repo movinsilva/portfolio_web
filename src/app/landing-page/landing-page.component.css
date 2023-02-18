@@ -1,3 +1,7 @@
+.main-div {
+    height: 95%;
+}
+
 .name {
     margin-top: 200px;
     color: white;
@@ -28,6 +32,9 @@ backdrop-filter: blur(5px);
 .social-links {
     font-size: 30px;
     color: white;
+} 
+.social-icons:hover {
+    transform: scale(1.5);
 }
 
 .social-icons {

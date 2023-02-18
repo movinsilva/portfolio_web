@@ -6,19 +6,22 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialDesignModule } from './material-design/material-design.module';
 import { NavbarComponent } from './navbar/navbar.component';
-import { LandingPageComponent } from './landing-page/landing-page.component'; 
+import { ExperiencePageModule } from './experience-page/experience-page.module';
+import { LandingPageModule } from './landing-page/landing-page.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    LandingPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialDesignModule
+    MaterialDesignModule,
+    ExperiencePageModule,
+    LandingPageModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
