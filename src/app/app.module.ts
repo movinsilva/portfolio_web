@@ -9,6 +9,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ExperiencePageModule } from './experience-page/experience-page.module';
 import { LandingPageModule } from './landing-page/landing-page.module';
 import { CvProjectsPageModule } from './cv-projects-page/cv-projects-page.module';
+import { ProjectsTechComponent } from './projects-tech/projects-tech.component';
+import { ProjectsTechModule } from './projects-tech/projects-tech.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { CvProjectsPageModule } from './cv-projects-page/cv-projects-page.module
     MaterialDesignModule,
     ExperiencePageModule,
     LandingPageModule,
-    CvProjectsPageModule
+    CvProjectsPageModule,
+    ProjectsTechModule
 
   ],
   providers: [],
