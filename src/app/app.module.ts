@@ -8,6 +8,7 @@ import { MaterialDesignModule } from './material-design/material-design.module';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ExperiencePageModule } from './experience-page/experience-page.module';
 import { LandingPageModule } from './landing-page/landing-page.module';
+import { CvProjectsPageModule } from './cv-projects-page/cv-projects-page.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { LandingPageModule } from './landing-page/landing-page.module';
     BrowserAnimationsModule,
     MaterialDesignModule,
     ExperiencePageModule,
-    LandingPageModule
+    LandingPageModule,
+    CvProjectsPageModule
 
   ],
   providers: [],
