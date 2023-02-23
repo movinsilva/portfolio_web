@@ -260,7 +260,23 @@ backdrop-filter: blur(5px);
 .main-timeline .timeline:last-child:nth-child(even){
     margin: 0;
 }
+.img {
+    width: 7rem!important;
+}
 @media only screen and (max-width: 990px){
+
+    .img {
+        width: 5rem!important;
+    }
+    .main-timeline .circle {
+        width: 120px;
+        height: 120px;
+        border: 4px solid goldenrod;
+    }
+    .main-timeline .circle span {
+        line-height: 20px;
+    }
+
     .main-timeline:before{ left: 100%; }
     .main-timeline .timeline{
         width: 100%;

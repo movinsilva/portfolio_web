@@ -11,6 +11,7 @@ import { LandingPageModule } from './landing-page/landing-page.module';
 import { CvProjectsPageModule } from './cv-projects-page/cv-projects-page.module';
 import { ProjectsTechComponent } from './projects-tech/projects-tech.component';
 import { ProjectsTechModule } from './projects-tech/projects-tech.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -25,8 +26,7 @@ import { ProjectsTechModule } from './projects-tech/projects-tech.module';
     ExperiencePageModule,
     LandingPageModule,
     CvProjectsPageModule,
-    ProjectsTechModule
-
+    ProjectsTechModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

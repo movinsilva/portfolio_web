@@ -12,6 +12,7 @@
 
 .personal {
     margin-top: 15%;
+    margin-left: 9%;
 }
 .photo {
     width: 265px;
@@ -32,9 +33,11 @@
 .social-links {
     font-size: 30px;
     color: white;
+    text-decoration: none;
 } 
-.social-icons:hover {
-    transform: scale(1.5);
+.social-links:hover {
+    cursor: pointer;
+    color: goldenrod;
 }
 
 .social-icons {
@@ -42,3 +45,84 @@
     margin-right: 10px;
     opacity: 0.7;
 }
+.social-icons:hover {
+    transform: scale(1.5);
+}
+
+a {
+    text-decoration: none;
+}
+.cv-button {
+    font-size: 1.8rem;
+    color: white;
+    padding: 1rem;
+    width: 22rem;
+    font-weight: 300;
+
+    margin: 6rem auto;
+
+    border: 1px solid darkgrey;
+
+    /* Glas Effect */
+    background: rgba(255, 255, 255, 0.20);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+.cv-button:hover {
+    color: goldenrod;
+    background: rgba(39, 39, 39, 0.603);
+    border: 3px solid goldenrod;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1395px) {
+    .name {
+        font-size: 75px;
+    }
+    .photo {
+        width: 200px;
+    }
+    .photo-bg {
+        width: 220px;
+    }
+    .social-links{
+        font-size: 24px;
+    }
+    .social-icons {
+        width: 24px;
+    }
+  }
+
+  @media (max-width: 1110px) {
+    .name {
+        font-size: 45px;
+    }
+    .photo {
+        width: 170px;
+    }
+    .photo-bg {
+        width: 190px;
+    }
+    .social-links{
+        font-size: 20px;
+    }
+    .social-icons {
+        width: 20px;
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    .name {
+     margin-top: 85px; 
+    }
+    .personal {
+        margin-top: 3.5rem;
+    }
+    .cv-button{
+        font-size: 1.3rem;
+        width: 17rem;
+        margin: 3rem auto 0;
+    }
+  }

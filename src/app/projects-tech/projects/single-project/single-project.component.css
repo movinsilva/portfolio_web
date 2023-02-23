@@ -8,6 +8,13 @@
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
 }
+.project-container:hover {
+    transform: scale(1.08);
+}
+
+a {
+    text-decoration: none;
+}
 
 .title {
     color: grey;

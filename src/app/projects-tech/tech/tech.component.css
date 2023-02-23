@@ -5,3 +5,12 @@ h1 {
     margin-bottom: 20%;
 }
 
+@media (max-width: 991.98px) {
+    h1 {
+        text-align: start;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        font-size: 3rem;
+    }
+  }
+

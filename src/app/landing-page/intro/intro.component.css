@@ -9,13 +9,42 @@
 .intro > div {
     font-size: 6rem;
     margin-top: 6rem;
-
     color: white;
-
 }
+
 #hello {
     font-size: 6rem;
     color: goldenrod;
+}
+
+
+
+@media (max-width: 1395px) {
+  #hello {
+    font-size: 75px;
+  }
+  .intro > div {
+      font-size: 75px;
+  }
+}
+@media (max-width: 1110px) {
+  #hello {
+    font-size: 45px;
+  }
+  .intro > div {
+      font-size: 45px;
+  }
+}
+@media (max-width: 991.98px) {
+  .intro {
+    margin-top: 10%;
+  }
+  .intro > div {
+    margin-top: 3rem;
+  }
+  .mouse_scroll {
+    margin-top: 50px!important;
+  }
 }
 
 
