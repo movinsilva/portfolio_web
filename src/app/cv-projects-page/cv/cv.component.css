@@ -12,6 +12,12 @@
 
 .cv-container:hover {
     opacity: 0.85;
+    cursor: pointer;
+}
+
+a{
+    color: transparent;
+    text-decoration: none;
 }
 
 
@@ -22,6 +28,7 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
     margin-right: 2rem;
+    
 }
 
 .cv-container img {

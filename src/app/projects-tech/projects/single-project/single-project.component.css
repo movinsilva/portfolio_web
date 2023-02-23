@@ -55,7 +55,7 @@
 
 .project-container :hover  .arrow span {
     opacity: 1;
-    animation: animate 2s;
+    animation: animate 1s;
     border-bottom: 5px solid goldenrod;
     border-right: 5px solid goldenrod;
 }
