@@ -88,3 +88,13 @@ a {
         transform: rotate(45deg) translate(20px, 20px);
     }
 }
+
+@media (max-width: 991.98px) {
+    .project-container {
+        margin: 1rem 0;
+    }
+    
+    .name {
+        line-height: 2rem;
+    }
+  }

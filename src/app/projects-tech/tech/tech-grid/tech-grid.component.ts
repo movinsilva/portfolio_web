@@ -10,9 +10,9 @@ export class TechGridComponent {
   path: string = "../../../../assets/tech/"
   extension: string = ".png"
   logos1: string[] = [
-    "../../../../assets/java.png",
-    "../../../../assets/python.png",
-    "../../../../assets/c.png"
+    "../../../../assets/tech/java.png",
+    "../../../../assets/tech/python.png",
+    "../../../../assets/tech/c.png"
   ]
 
     logos2: string[] = [

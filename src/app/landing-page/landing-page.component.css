@@ -115,14 +115,19 @@ a {
 
   @media (max-width: 991.98px) {
     .name {
-     margin-top: 85px; 
+     margin-top: 45px; 
     }
     .personal {
-        margin-top: 3.5rem;
+        margin-top: 3rem;
     }
     .cv-button{
         font-size: 1.3rem;
         width: 17rem;
         margin: 3rem auto 0;
+        padding: 0.5rem;
+        font-size: 1.2rem;
+    }
+    .social-links {
+        margin-bottom: 1rem;
     }
   }
