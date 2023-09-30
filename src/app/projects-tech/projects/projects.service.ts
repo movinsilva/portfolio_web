@@ -10,11 +10,18 @@ export class ProjectsService {
   getProjects() {
     return [
       {
+        title: "ReactJS NodeJS Express PostgreSQL",
+        name: "Travel GO",
+        description: "Train boking system with frontend, admin-panel, backend",
+        technology: "Javascript, CSS, HTML",
+        link: "/travelgo"
+      },
+      {
         title: "Angular",
         name: "portfolio_web",
         description: "Portfolio website designed using angular, typescript",
         technology: "Typescript, HTML, CSS",
-        link: "https://github.com/movinsilva/portfolio_web"
+        link: "/portfolio-web"
       },
       {
         title: "HTML CSS JS",

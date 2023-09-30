@@ -17,6 +17,7 @@ p {
 }
 .tech-item:hover {
     transform: scale(1.5);
+    transition: transform 0.7s ease; 
 }
 
 .tech-item img {
@@ -25,6 +26,7 @@ p {
     margin: 0;
     position: absolute;
     top: 50%;
+    left: 20%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
