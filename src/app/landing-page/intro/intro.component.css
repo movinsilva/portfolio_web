@@ -38,12 +38,14 @@
 @media (max-width: 991.98px) {
   .intro {
     margin-top: 10%;
+    margin-right: 5%;
   }
   .intro > div {
     margin-top: 3rem;
   }
   .mouse_scroll {
     margin-top: 50px!important;
+    margin-right: 7%!important;
   }
 }
 
