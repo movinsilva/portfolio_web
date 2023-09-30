@@ -11,12 +11,19 @@ import { LandingPageModule } from './landing-page/landing-page.module';
 import { CvProjectsPageModule } from './cv-projects-page/cv-projects-page.module';
 import { ProjectsTechComponent } from './projects-tech/projects-tech.component';
 import { ProjectsTechModule } from './projects-tech/projects-tech.module';
-import { RouterModule } from '@angular/router';
+import { MainpageComponent } from './mainpage/mainpage.component';
+import { PortfolioWebComponent } from './project-pages/portfolio-web/portfolio-web.component';
+import { NgImageSliderModule } from 'ng-image-slider';
+import { TravelgoComponent } from './project-pages/travelgo/travelgo.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
+    MainpageComponent,
+    PortfolioWebComponent,
+    TravelgoComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,6 +34,7 @@ import { RouterModule } from '@angular/router';
     LandingPageModule,
     CvProjectsPageModule,
     ProjectsTechModule,
+    NgImageSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
