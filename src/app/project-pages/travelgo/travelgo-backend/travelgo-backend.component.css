@@ -96,9 +96,12 @@
         font-size: 1.1rem;
         line-height: 1.5rem;
     }
+    .description-box {
+        margin-top: 5%;
+    }
     
     .description {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     .link a {
         font-size: 0.95rem;
