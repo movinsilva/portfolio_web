@@ -21,7 +21,7 @@ export class ProjectsService {
         name: "portfolio_web",
         description: "Portfolio website designed using angular, typescript",
         technology: "Typescript, HTML, CSS",
-        link: "/#/portfolio-web"
+        link: "/portfolio_web/#/portfolio-web"
       },
       {
         title: "HTML CSS JS",
