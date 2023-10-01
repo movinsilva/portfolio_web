@@ -1,8 +1,10 @@
+.main-div {
+    padding: 3rem 3rem;
+}
 h1 {
-    text-align: center;
     color: white;
     font-size: 4rem;
-    margin-bottom: 20%;
+    margin-bottom: 5%;
 }
 
 @media (max-width: 991.98px) {

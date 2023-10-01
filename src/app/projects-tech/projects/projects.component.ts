@@ -11,9 +11,11 @@ export class ProjectsComponent {
   constructor(private projectsService: ProjectsService) {}
 
   projects: Project[] = []
+  projects2: Project[] = []
 
   ngOnInit() {
     this.projects = this.projectsService.getProjects()
+    this.projects2 = this.projectsService.getProjects2()
   }
 
 }

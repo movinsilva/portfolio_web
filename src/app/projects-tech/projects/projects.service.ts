@@ -29,6 +29,25 @@ export class ProjectsService {
         description: "Company profile website designed using HTML, CSS, JS",
         technology: "HTML, CSS, Javascript",
         link: "https://ecodeit.com"
+      }
+    ]
+  }
+
+  getProjects2() {
+    return [
+      {
+        title: ".Net-Core",
+        name: "HRMS",
+        description: "HRMS desktop application designed using .Net Core",
+        technology: "C#",
+        link: "https://github.com/movinsilva/HarithaHRMS"
+      },
+      {
+        title: "HTML CSS JS",
+        name: "Company profile website",
+        description: "Company profile website designed using HTML, CSS, JS",
+        technology: "HTML, CSS, Javascript",
+        link: "https://ecodeit.com"
       },
       {
         title: "Flutter",
