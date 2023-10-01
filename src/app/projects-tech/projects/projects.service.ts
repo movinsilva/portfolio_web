@@ -14,7 +14,7 @@ export class ProjectsService {
         name: "Travel GO",
         description: "Train boking system with frontend, admin-panel, backend",
         technology: "Javascript, CSS, HTML",
-        link: "/#/travelgo"
+        link: "/portfolio_web//#/travelgo"
       },
       {
         title: "Angular",

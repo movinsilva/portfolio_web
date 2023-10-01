@@ -15,6 +15,10 @@ import { MainpageComponent } from './mainpage/mainpage.component';
 import { PortfolioWebComponent } from './project-pages/portfolio-web/portfolio-web.component';
 import { NgImageSliderModule } from 'ng-image-slider';
 import { TravelgoComponent } from './project-pages/travelgo/travelgo.component';
+import { TravelgoFrontendComponent } from './project-pages/travelgo/travelgo-frontend/travelgo-frontend.component';
+import { TravelgoAdminComponent } from './project-pages/travelgo/travelgo-admin/travelgo-admin.component';
+import { TravelgoBackendComponent } from './project-pages/travelgo/travelgo-backend/travelgo-backend.component';
+import { TravelgoDeploymentComponent } from './project-pages/travelgo/travelgo-deployment/travelgo-deployment.component';
 
 
 @NgModule({
@@ -24,6 +28,10 @@ import { TravelgoComponent } from './project-pages/travelgo/travelgo.component';
     MainpageComponent,
     PortfolioWebComponent,
     TravelgoComponent,
+    TravelgoFrontendComponent,
+    TravelgoAdminComponent,
+    TravelgoBackendComponent,
+    TravelgoDeploymentComponent,
   ],
   imports: [
     BrowserModule,

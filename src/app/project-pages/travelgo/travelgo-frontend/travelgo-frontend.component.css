@@ -1,5 +1,5 @@
 .main-div {
-    margin: 3%;
+    padding: 5% 3%;
 }
 
 .title {
@@ -8,25 +8,15 @@
 }
 
 .project-description-container {
-    margin-top: 5%;
+    margin-top: 3%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.row-container {
-    display: flex;
-    align-items: center;
-}
-.enter-text {
-    color: rgb(45, 110, 170);
-    font-size: 2rem;
-    margin-right: 2rem;
-    line-height: 2.3rem;
 
-}
+
 
 .description-box {
-    margin-top: 10%;
     margin-right: 5%;
     padding: 2rem;
     border-radius: 12px;
