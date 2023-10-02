@@ -27,7 +27,7 @@ export class ProjectsService {
       },
       {
         title: "HTML CSS JS",
-        name: "Company profile website",
+        name: "ECODE IT website",
         description: "Company profile website designed using HTML, CSS, JS",
         technology: "HTML, CSS, Javascript",
         link: "https://ecodeit.com",
@@ -48,7 +48,7 @@ export class ProjectsService {
       },
       {
         title: "HTML CSS JS",
-        name: "Company profile website",
+        name: "IES website",
         description: "Company profile website designed using HTML, CSS, JS",
         technology: "HTML, CSS, Javascript",
         link: "https://ecodeit.com",
