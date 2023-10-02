@@ -20,5 +20,7 @@ export class TravelgoBackendComponent {
     './assets/tech/postgresql.svg',
     './assets/tech/jest.png',
     './assets/tech/swagger.png',
+    './assets/tech/postman.png',
+    './assets/tech/jwt.svg',
   ];
 }

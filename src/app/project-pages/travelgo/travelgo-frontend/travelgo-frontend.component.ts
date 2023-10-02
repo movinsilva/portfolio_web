@@ -54,7 +54,7 @@ export class TravelgoFrontendComponent {
   logos1: string[] = [
     './assets/tech/react.png',
     './assets/tech/html.png',
-    './assets/tech/css.png',
+    './assets/tech/sass.png',
     './assets/tech/js.png',
     './assets/tech/bootstrap.png',
     './assets/tech/redux.png',

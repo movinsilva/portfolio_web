@@ -38,7 +38,7 @@ export class ContactFormComponent implements OnInit {
     emailjs.send(emailData.service_id,emailData.template_id, emailData.template_params).then(
       (response) => {
         console.log('Email sent successfully:', response);
-        window.alert('')
+        window.alert('Message Sent Successfully')
       },
       (error) => {
         console.error('Email sending failed:', error);
