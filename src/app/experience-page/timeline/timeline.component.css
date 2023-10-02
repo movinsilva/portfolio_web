@@ -372,3 +372,36 @@ backdrop-filter: blur(5px);
         text-align: center;
     }
 }
+
+
+
+@keyframes slideInAnimation {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+  
+  .timeline-left.animation-triggered {
+    animation: slideInAnimation 1s ease-out both;
+  }
+
+  @keyframes slideInAnimationRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+
+  .timeline-right.animation-triggered {
+    animation: slideInAnimationRight 1s ease-out both;
+  }
+  

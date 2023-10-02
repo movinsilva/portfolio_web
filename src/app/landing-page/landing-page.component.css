@@ -27,6 +27,8 @@
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
+
+    animation: appearAnimation 2s ease-out;
 }
 
 
@@ -132,3 +134,16 @@ a {
         margin-bottom: 1rem;
     }
   }
+
+
+
+  @keyframes appearAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
