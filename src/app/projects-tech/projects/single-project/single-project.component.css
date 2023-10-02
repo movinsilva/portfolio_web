@@ -40,31 +40,54 @@ a {
 
 
 
-.arrow {
+.circle-button {
     position: absolute;
-    top: -30%;
-    left: 60%;
-    transform: translate(-50%, -50%);
-    transform: rotate(-90deg);
+    right: 5%;
+    bottom: 15%;
+    width: 40px;
+    height: 40px;
+    background-color: transparent; /* Change to your desired button color */
+    border: 1px solid white;
+    border-radius: 50%;
     cursor: pointer;
+    overflow: hidden;
 }
 
-.arrow span {
-    display: block;
-    width: 1.5vw;
-    height: 1.5vw;
-    border-bottom: 5px solid white;
-    opacity: .2;
-    border-right: 5px solid white;
-    transform: rotate(45deg);
-    margin: -10px;
+
+.arrow {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: goldenrod; /* Change to your desired arrow color */
 }
 
 .project-container:hover{
     opacity: 1;
     animation: animate 1s;
+    transition: 1s;
     border-bottom: 5px solid goldenrod;
     border-right: 5px solid goldenrod;
 }
+
+.animated-project {
+    animation: attention 5s infinite; /* Run the animation continuously */
+}
+
+@keyframes attention {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+      border: 1.5px solid goldenrod;
+      background: black;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+
+  
 
 

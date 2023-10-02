@@ -3,5 +3,6 @@ export interface Project {
     name: String,
     description: String,
     technology: String,
-    link: String
+    link: String,
+    applyAnimation: Boolean
 }

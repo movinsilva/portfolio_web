@@ -60,7 +60,8 @@ import { HrmsDesktopComponent } from './project-pages/hrms/hrms-desktop/hrms-des
     NgImageSliderModule,
     ReactiveFormsModule,
     HttpClientModule,
-    YouTubePlayerModule
+    YouTubePlayerModule,
+    BrowserAnimationsModule
   ],
   providers: [
   ],

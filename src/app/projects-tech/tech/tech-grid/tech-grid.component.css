@@ -43,6 +43,9 @@ p {
     .tech-item img {
         width: 2rem;
     }
-
+    .tech-item:hover {
+        transform: none;
+        transition: none; 
+    }
     
 }
