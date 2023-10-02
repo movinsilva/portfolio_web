@@ -1,0 +1,52 @@
+.form-title {
+    font-size: 2.5rem;
+    color: goldenrod
+}
+
+label {
+    color: white;
+   
+}
+
+textarea {
+    height: 8rem;
+}
+
+input, textarea {
+    margin-top: 5%;
+    background-color: transparent;
+    border: 1px solid rgba(218, 165, 32, 0.527);
+    padding: 10px 1rem;
+    color: white;
+}
+
+input::placeholder, textarea::placeholder {
+    color: rgba(255, 255, 255, 0.527);
+    font-weight: 100;
+}
+
+input:focus, textarea:focus {
+    background-color: transparent;
+    border-color: goldenrod; 
+  box-shadow: 0 0 0 0.2rem goldenrod;
+}
+
+input:focus, textarea:focus {
+color: white;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 0s 600000s, color 0s 600000s;
+}
+
+
+
+.submit-button {
+    margin-top: 4%;
+    padding: 10px 4rem;
+    background-color: goldenrod;
+    color: white;
+    border: none;
+}
+

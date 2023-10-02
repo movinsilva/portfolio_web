@@ -19,6 +19,11 @@ import { TravelgoFrontendComponent } from './project-pages/travelgo/travelgo-fro
 import { TravelgoAdminComponent } from './project-pages/travelgo/travelgo-admin/travelgo-admin.component';
 import { TravelgoBackendComponent } from './project-pages/travelgo/travelgo-backend/travelgo-backend.component';
 import { TravelgoDeploymentComponent } from './project-pages/travelgo/travelgo-deployment/travelgo-deployment.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ContactPageComponent } from './contact-page/contact-page.component';
+import { ContactFormComponent } from './contact-page/contact-form/contact-form.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ContactInfoComponent } from './contact-page/contact-info/contact-info.component';
 
 
 @NgModule({
@@ -32,6 +37,9 @@ import { TravelgoDeploymentComponent } from './project-pages/travelgo/travelgo-d
     TravelgoAdminComponent,
     TravelgoBackendComponent,
     TravelgoDeploymentComponent,
+    ContactPageComponent,
+    ContactFormComponent,
+    ContactInfoComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,9 +50,12 @@ import { TravelgoDeploymentComponent } from './project-pages/travelgo/travelgo-d
     LandingPageModule,
     CvProjectsPageModule,
     ProjectsTechModule,
-    NgImageSliderModule
+    NgImageSliderModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

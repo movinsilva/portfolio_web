@@ -1,0 +1,45 @@
+.contact-title {
+    color: goldenrod;
+    font-size: 1.5rem;
+    margin-bottom: 8%;
+}
+
+.contact-info {
+    color: darkgray;
+    font-size: 1rem;
+    margin-bottom: 13px;
+    margin-left: 2rem;
+    margin-top: 7%;
+}
+
+.email-2 {
+    margin-top: 8px;
+}
+
+ a {
+    margin-left: 4rem;
+    color: rgba(255, 255, 255, 0.767)!important;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.social-links:hover, .email:hover {
+    transform: scale(1.2) ;
+    transition: transform 0.4s ease; 
+}
+
+.social-links {
+    margin-top: 1.5rem;
+}
+
+.social-icons {
+    height: 1.5rem;
+    margin-right: 1rem;
+}
+
+@media (max-width: 990px) {
+    .contact-title {
+        margin-top: 2rem;
+    }
+}
+
