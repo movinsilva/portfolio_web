@@ -40,7 +40,7 @@ export class ProjectsService {
         name: "HRMS",
         description: "HRMS desktop application designed using .Net Core",
         technology: "C#",
-        link: "https://github.com/movinsilva/HarithaHRMS"
+        link: "/portfolio_web//#/hrms"
       },
       {
         title: "HTML CSS JS",

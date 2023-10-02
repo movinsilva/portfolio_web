@@ -24,6 +24,10 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
 import { ContactFormComponent } from './contact-page/contact-form/contact-form.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ContactInfoComponent } from './contact-page/contact-info/contact-info.component';
+import { HrmsComponent } from './project-pages/hrms/hrms.component';
+import { VideoComponent } from './project-pages/hrms/video/video.component';
+import { YouTubePlayerModule } from '@angular/youtube-player';
+import { HrmsDesktopComponent } from './project-pages/hrms/hrms-desktop/hrms-desktop.component';
 
 
 @NgModule({
@@ -40,6 +44,9 @@ import { ContactInfoComponent } from './contact-page/contact-info/contact-info.c
     ContactPageComponent,
     ContactFormComponent,
     ContactInfoComponent,
+    HrmsComponent,
+    VideoComponent,
+    HrmsDesktopComponent,
   ],
   imports: [
     BrowserModule,
@@ -52,7 +59,8 @@ import { ContactInfoComponent } from './contact-page/contact-info/contact-info.c
     ProjectsTechModule,
     NgImageSliderModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    YouTubePlayerModule
   ],
   providers: [
   ],

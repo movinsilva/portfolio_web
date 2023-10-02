@@ -34,3 +34,15 @@ p {
 .grid-section {
     margin-bottom: 5rem;
 }
+
+@media (max-width: 744px) {
+    .tech-item {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    .tech-item img {
+        width: 2rem;
+    }
+
+    
+}
