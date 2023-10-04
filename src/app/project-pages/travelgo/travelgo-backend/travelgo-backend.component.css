@@ -89,10 +89,7 @@
 @media (max-width: 1200px) {
     .title {
         font-size: 2rem;
-    }
-    .enter-text {
-        font-size: 1.1rem;
-        line-height: 1.5rem;
+        line-height: 2.2rem;
     }
     .description-box {
         margin-top: 5%;
@@ -109,9 +106,20 @@
         height: 40px;
     }
     .main-div {
-        margin: 3rem;
+        margin: 1.5rem;
     }
     .description-box {
         margin-right: 0;
     }
+}
+
+@media (max-width: 744px) {
+    .tech-item {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    .tech-item img {
+        width: 2rem;
+    }
+    
 }
