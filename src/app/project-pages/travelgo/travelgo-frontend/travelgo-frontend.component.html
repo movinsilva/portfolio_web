@@ -1,0 +1,49 @@
+<div class="main-div" id="travelgo-frontend">
+  <div class="title">TravelGo - Frontend</div>
+
+  <div class="row justify-content-between">
+    <div class="col-lg-5 project-description-container">
+
+      <div class="description-box">
+        <div class="description">
+          TravelGo's frontend is a modern and user-centric interface developed
+          primarily with ReactJS and Bootstrap. This combination ensures an
+          intuitive and visually appealing web experience for users.
+          Additionally, TravelGo extends its reach to mobile users through a
+          Flutter-based mobile application, which seamlessly integrates a web
+          view of the TravelGo website. This approach guarantees a consistent
+          and responsive user experience across various devices, making train
+          booking and travel management accessible and convenient.
+
+
+          <div class="top-link">
+            Source code:
+            <a
+              href="https://github.com/movinsilva/TravelGo-Frontend"
+              target="_blank"
+              >https://github.com/movinsilva/TravelGo-Frontend</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+      <ng-image-slider
+        [images]="imageObject"
+        #nav
+        [imageSize]="{ width: '100%', height: '70%', space: '50px' }"
+        [manageImageRatio]="true"
+        [infinite]="true"
+        [autoSlide]="true"
+        [animationSpeed]="3"
+      ></ng-image-slider>
+    </div>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-2 tech-item" *ngFor="let logo of logos1">
+      <img src="{{ logo }}" />
+    </div>
+  </div>
+</div>
