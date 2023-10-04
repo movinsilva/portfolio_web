@@ -8,6 +8,8 @@ p {
     width: 5rem;
     height: 5rem;
     margin: 0.5rem;
+
+    
     /* Glas Effect */
     background: rgba(255, 255, 255, 0.438);
     border-radius: 26px;
@@ -24,11 +26,10 @@ p {
     width: 3rem;
     object-fit: scale-down;
     margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 20%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+
+
+    
+    
 }
 
 .grid-section {
@@ -42,10 +43,6 @@ p {
     }
     .tech-item img {
         width: 2rem;
-    }
-    .tech-item:hover {
-        transform: none;
-        transition: none; 
     }
     
 }
