@@ -27,6 +27,7 @@ import { HrmsComponent } from './project-pages/hrms/hrms.component';
 import { VideoComponent } from './project-pages/hrms/video/video.component';
 import { YouTubePlayerModule } from '@angular/youtube-player';
 import { HrmsDesktopComponent } from './project-pages/hrms/hrms-desktop/hrms-desktop.component';
+import { MoneyManagerComponent } from './project-pages/money-manager/money-manager.component';
 
 
 @NgModule({
@@ -46,6 +47,7 @@ import { HrmsDesktopComponent } from './project-pages/hrms/hrms-desktop/hrms-des
     HrmsComponent,
     VideoComponent,
     HrmsDesktopComponent,
+    MoneyManagerComponent,
   ],
   imports: [
     BrowserModule,

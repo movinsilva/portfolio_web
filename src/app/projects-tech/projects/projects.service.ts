@@ -19,7 +19,7 @@ export class ProjectsService {
       },
       {
         title: "Angular",
-        name: "portfolio_web",
+        name: "Portfolio Website",
         description: "Portfolio website designed using angular, typescript",
         technology: "Typescript, HTML, CSS",
         link: "/portfolio_web/#/portfolio-web",
@@ -27,7 +27,7 @@ export class ProjectsService {
       },
       {
         title: "HTML CSS JS",
-        name: "ECODE IT website",
+        name: "ECODE IT Website",
         description: "Company profile website designed using HTML, CSS, JS",
         technology: "HTML, CSS, Javascript",
         link: "https://ecodeit.com",
@@ -48,7 +48,7 @@ export class ProjectsService {
       },
       {
         title: "HTML CSS JS",
-        name: "IES website",
+        name: "IES Website",
         description: "Company profile website designed using HTML, CSS, JS",
         technology: "HTML, CSS, Javascript",
         link: "https://ecodeit.com",
@@ -56,10 +56,10 @@ export class ProjectsService {
       },
       {
         title: "Flutter",
-        name: "money_manager",
+        name: "Money Manager App",
         description: "Money management mobile app designed using flutter, SQFLite",
         technology: "Dart",
-        link: "https://github.com/movinsilva/money_manager",
+        link: "/portfolio_web/#/money-manager",
         applyAnimation: false,
       }
     ]
