@@ -28,7 +28,8 @@ import { VideoComponent } from './project-pages/hrms/video/video.component';
 import { YouTubePlayerModule } from '@angular/youtube-player';
 import { HrmsDesktopComponent } from './project-pages/hrms/hrms-desktop/hrms-desktop.component';
 import { MoneyManagerComponent } from './project-pages/money-manager/money-manager.component';
-
+import { BlogComponent } from './blog/blog.component';
+import { BlogPreviewComponent } from './blog/blog-preview/blog-preview.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,8 @@ import { MoneyManagerComponent } from './project-pages/money-manager/money-manag
     VideoComponent,
     HrmsDesktopComponent,
     MoneyManagerComponent,
+    BlogComponent,
+    BlogPreviewComponent,
   ],
   imports: [
     BrowserModule,
@@ -62,10 +65,9 @@ import { MoneyManagerComponent } from './project-pages/money-manager/money-manag
     ReactiveFormsModule,
     HttpClientModule,
     YouTubePlayerModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
   ],
-  providers: [
-  ],
-  bootstrap: [AppComponent]
+  providers: [],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

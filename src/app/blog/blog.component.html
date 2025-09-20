@@ -1,0 +1,102 @@
+<section class="blog-section">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-12 text-center mb-5">
+        <h1 class="blog-title">My Blog</h1>
+        <p class="blog-subtitle">Latest articles from my Medium profile</p>
+        <a
+          href="https://medium.com/@movin_silva"
+          target="_blank"
+          class="medium-link"
+        >
+          Follow me on Medium
+        </a>
+      </div>
+    </div>
+
+    <!-- Loading State -->
+    <div *ngIf="loading" class="text-center">
+      <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+      </div>
+      <p class="loading-text">Loading latest articles...</p>
+    </div>
+
+    <!-- Error State -->
+    <div *ngIf="error && !loading" class="text-center">
+      <div class="error-container">
+        <h3>Unable to load articles</h3>
+        <p>Please check out my Medium profile directly</p>
+        <button class="retry-btn" (click)="refresh()">Try Again</button>
+      </div>
+    </div>
+
+    <!-- Blog Posts Grid -->
+    <div *ngIf="!loading && !error" class="row">
+      <div class="col-lg-4 col-md-6 mb-4" *ngFor="let post of blogPosts">
+        <div class="blog-card" (click)="openPost(post.link)">
+          <div class="blog-card-header">
+            <div class="blog-thumbnail" *ngIf="post.thumbnail">
+              <img
+                [src]="post.thumbnail"
+                [alt]="post.title"
+                class="thumbnail-img"
+              />
+            </div>
+            <div class="blog-thumbnail placeholder" *ngIf="!post.thumbnail">
+              <div class="placeholder-icon">📝</div>
+            </div>
+          </div>
+
+          <div class="blog-card-body">
+            <div class="blog-meta">
+              <span class="publish-date">{{ post.pubDate }}</span>
+              <span class="read-time">{{ post.readTime }}</span>
+            </div>
+
+            <h3 class="blog-title-card">{{ post.title }}</h3>
+            <p class="blog-description">{{ post.description }}</p>
+
+            <div class="blog-tags" *ngIf="post.categories.length > 0">
+              <span
+                class="tag"
+                *ngFor="let category of post.categories.slice(0, 3)"
+              >
+                {{ category }}
+              </span>
+            </div>
+          </div>
+
+          <div class="blog-card-footer">
+            <div class="author-info">
+              <span class="author-name">{{ post.author }}</span>
+            </div>
+            <div class="read-more">
+              <span class="arrow">→</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Empty State -->
+    <div
+      *ngIf="!loading && !error && blogPosts.length === 0"
+      class="text-center"
+    >
+      <div class="empty-state">
+        <h3>No articles found</h3>
+        <p>Check back later for new content!</p>
+        <a
+          href="https://medium.com/@movin_silva"
+          target="_blank"
+          class="medium-link"
+        >
+          Visit Medium Profile
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

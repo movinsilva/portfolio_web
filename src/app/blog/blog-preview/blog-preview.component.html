@@ -1,0 +1,67 @@
+<section class="blog-preview-section" id="blog">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-12 text-center mb-5">
+        <h2 class="section-title">Latest from My Blog</h2>
+        <p class="section-subtitle">Recent articles and insights</p>
+      </div>
+    </div>
+
+    <!-- Loading State -->
+    <div *ngIf="loading" class="text-center">
+      <div class="simple-spinner"></div>
+      <p class="loading-text">Loading articles...</p>
+    </div>
+
+    <!-- Featured Posts -->
+    <div *ngIf="!loading && featuredPosts.length > 0" class="row">
+      <div class="col-lg-4 col-md-6 mb-4" *ngFor="let post of featuredPosts">
+        <div class="preview-card" (click)="openPost(post.link)">
+          <div class="preview-meta">
+            <span class="preview-date">{{ post.pubDate }}</span>
+            <span class="preview-read-time">{{ post.readTime }}</span>
+          </div>
+
+          <h3 class="preview-title">{{ post.title }}</h3>
+          <p class="preview-description">{{ post.description }}</p>
+
+          <div class="preview-footer">
+            <span class="read-more-text">Read on Medium</span>
+            <span class="preview-arrow">→</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div *ngIf="!loading" class="text-center mt-4">
+      <button class="view-all-btn" (click)="viewAllPosts()">
+        View All Articles
+      </button>
+      <div class="mt-3">
+        <a
+          href="https://medium.com/@movin_silva"
+          target="_blank"
+          class="medium-follow-link"
+        >
+          Follow me on Medium
+        </a>
+      </div>
+    </div>
+
+    <!-- Fallback -->
+    <div *ngIf="!loading && featuredPosts.length === 0" class="text-center">
+      <div class="fallback-content">
+        <h3>Check out my Medium</h3>
+        <p>I share insights about software development and technology</p>
+        <a
+          href="https://medium.com/@movin_silva"
+          target="_blank"
+          class="medium-follow-link"
+        >
+          Visit My Medium Profile
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
