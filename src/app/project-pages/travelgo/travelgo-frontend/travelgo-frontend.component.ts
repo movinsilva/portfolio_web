@@ -60,5 +60,6 @@ export class TravelgoFrontendComponent {
     './assets/tech/redux.png',
     './assets/tech/flutter.png',
     './assets/tech/dart.png',
+    './assets/tech/vite.png',
   ];
 }

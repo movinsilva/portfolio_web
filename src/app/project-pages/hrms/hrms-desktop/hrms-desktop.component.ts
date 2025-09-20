@@ -50,5 +50,6 @@ export class HrmsDesktopComponent {
     './assets/tech/c-sharp.png',
     './assets/tech/mysql.png',
     './assets/tech/winforms.png',
+    './assets/tech/windows.png',
   ];
 }

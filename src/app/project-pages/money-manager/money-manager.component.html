@@ -1,0 +1,46 @@
+<p>money-manager works!</p>
+<div class="main-div">
+  <div class="title">Money Manager</div>
+
+  <div class="row justify-content-between">
+    <div class="col-lg-5 project-description-container">
+      <div class="description-box">
+        <div class="description">
+          I am currently developing a secure and privacy-centric Money Manager
+          application using Flutter and SQLite. This robust, fully offline app
+          places a strong emphasis on safeguarding user data by storing it
+          locally. With this application, users gain the ability to manage
+          various types of accounts, and it offers intuitive graphical
+          representations for a clear financial overview.
+
+          <div class="link top-link">
+            Website:
+            <a
+              href="https://movinsilva.github.io/portfolio_web/"
+              target="_blank"
+              >https://github.com/movinsilva/money_manager</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+      <ng-image-slider
+        [images]="imageObject"
+        #nav
+        [imageSize]="{ width: '100%', height: '70%', space: '50px' }"
+        [manageImageRatio]="true"
+        [infinite]="true"
+        [autoSlide]="true"
+        [animationSpeed]="3"
+      ></ng-image-slider>
+    </div>
+  </div>
+
+  <div class="row justify-content-center tech-row">
+    <div class="col-2 tech-item" *ngFor="let logo of logos1">
+      <img src="{{ logo }}" />
+    </div>
+  </div>
+</div>
