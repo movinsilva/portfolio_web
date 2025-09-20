@@ -16,14 +16,39 @@ interface TimelineEvent {
 export class TimelineComponent {
   timelineEvents: TimelineEvent[] = [
     {
-      year: '2021 - present',
+      year: '2025 - present',
+      title: 'Software Engineer, DevOps',
+      image: './assets/h2oaiLogo.png',
+      description: ``,
+      listItems: [
+        'Focuses on cloud infrastructure automation and developer experience optimization.',
+        'Design and implement robust CI/CD pipelines, manage multi-cloud environments across AWS, Azure, and GCP, and maintain containerized applications using Docker and Kubernetes.',
+        'Infrastructure as Code (IaC) development with Terraform and CloudFormation, Jenkins and GitHub Actions automation, and ensuring scalable, secure internal developer environments for the engineering teams.',
+      ],
+    },
+    {
+      year: '2025',
+      title: 'AWS Certified Solutions Architect – Associate',
+      image: './assets/tech/aws.png',
+      description: `Earned the AWS Certified Solutions Architect – Associate certification, demonstrating proficiency in designing and deploying scalable, highly available, and fault-tolerant systems on AWS.`,
+    },
+    {
+      year: '2021 - 2025',
       title: 'BSc Engineering - University of Moratuwa (CSE Department)',
       image: './assets/University_of_Moratuwa_logo.png',
       description: `B.Sc Engineering with specialization in Computer Science and Engineering
       <br><br>
-      GPA: 3.77/4.00<br>
-      Earned placement in the Dean's List thrice<br><br>
+      GPA: 3.82/4.00<br>
+      First Class Honours<br>
+      Earned placement in the Dean's List five times<br>
+      <br>
       Involved in maintenance of the CSE Department website`,
+    },
+    {
+      year: '2025',
+      title: 'Intern - Engineering',
+      image: './assets/h2oaiLogo.png',
+      description: `Contributed to the platform engineering team by developing and optimizing automated deployment pipelines for Helm charts across multiple Kubernetes environments. Successfully implemented CI/CD improvements that enhanced deployment reliability and reduced manual intervention in the release process.`,
     },
     {
       year: '2024',
@@ -38,7 +63,7 @@ export class TimelineComponent {
       description: `I have earned Practitioner and Developer certifications, demonstrating a strong foundation in IAM concepts and practical experience with WSO2 Identity Server.`,
     },
     {
-      year: '2020 - present',
+      year: '2020 - 2024',
       title: 'Co-founder - Ecode IT',
       image: './assets/ecode_e.png',
       description: `Ecode IT is a tech startup founded by me and two of my colleagues. At Ecode IT, we mainly provide enterprise level customized systems including web interfaces, desktop applications and mobile applications. Follow <a href="https://lk.linkedin.com/company/ecode-it" target="_blank">Ecode IT</a> on LinkedIn.`,
