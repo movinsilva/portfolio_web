@@ -1,0 +1,60 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0  # Fetch all history for all branches and tags
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Configure environment variables
+      run: |
+        # Replace placeholder values in environment files with GitHub secrets
+        sed -i "s/service_9296a8u/${{ secrets.EMAILJS_SERVICE_ID }}/g" src/environments/environment.prod.ts
+        sed -i "s/template_j4qnjmr/${{ secrets.EMAILJS_TEMPLATE_ID }}/g" src/environments/environment.prod.ts
+        sed -i "s/OxxSXuQwvu4-rDNy5/${{ secrets.EMAILJS_PUBLIC_KEY }}/g" src/environments/environment.prod.ts
+
+    - name: Build application
+      run: npm run deploy
+
+    - name: Setup Pages
+      uses: actions/configure-pages@v4
+      
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: './docs'
+        
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
