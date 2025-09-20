@@ -1,5 +1,6 @@
 .main-div {
-  height: 95%;
+  height: 100vh;
+  min-height: 100vh;
 }
 
 .name {
