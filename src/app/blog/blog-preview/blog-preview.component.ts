@@ -35,6 +35,11 @@ export class BlogPreviewComponent implements OnInit {
   }
 
   viewAllPosts(): void {
-    this.router.navigate(['/blog']);
+    this.router.navigate(['/blog']).then(() => {
+      // Only scroll to top when navigating to blog page specifically
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+      }, 0);
+    });
   }
 }
