@@ -30,7 +30,9 @@ export class TimelineComponent {
       year: '2025',
       title: 'AWS Certified Solutions Architect – Associate',
       image: './assets/tech/aws.png',
-      description: `Earned the AWS Certified Solutions Architect – Associate certification, demonstrating proficiency in designing and deploying scalable, highly available, and fault-tolerant systems on AWS.`,
+      description: `Earned the AWS Certified Solutions Architect – Associate certification, demonstrating proficiency in designing and deploying scalable, highly available, and fault-tolerant systems on AWS.
+      <br />
+      <a href="https://www.credly.com/badges/9efafc8d-f14b-4ba3-89ce-8a23d7ff3d97/public_url" target="_blank">View Credential</a>`,
     },
     {
       year: '2021 - 2025',
