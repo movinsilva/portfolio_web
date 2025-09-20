@@ -165,7 +165,7 @@
 
 .blog-meta {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   margin-bottom: 1rem;
   font-size: 0.85rem;
@@ -174,10 +174,6 @@
 
 .publish-date {
   color: goldenrod;
-}
-
-.read-time {
-  color: #ccc;
 }
 
 .blog-title-card {

@@ -10,7 +10,6 @@ export interface BlogPost {
   thumbnail?: string;
   categories: string[];
   author: string;
-  readTime?: string;
 }
 
 @Injectable({
@@ -53,7 +52,6 @@ export class BlogService {
       thumbnail: this.extractThumbnail(item.description || item.content || ''),
       categories: item.categories || [],
       author: item.author || 'Movin Silva',
-      readTime: this.estimateReadTime(item.description || item.content || ''),
     };
   }
 
@@ -79,14 +77,6 @@ export class BlogService {
     });
   }
 
-  private estimateReadTime(content: string): string {
-    const wordsPerMinute = 200;
-    const text = this.stripHtml(content);
-    const wordCount = text.split(' ').length;
-    const readTime = Math.ceil(wordCount / wordsPerMinute);
-    return `${readTime} min read`;
-  }
-
   private getFallbackPosts(): BlogPost[] {
     return [
       {
@@ -97,7 +87,6 @@ export class BlogService {
           'Check out my latest articles on Medium where I share insights about software development, technology, and my journey as a developer.',
         categories: ['Technology', 'Development'],
         author: 'Movin Silva',
-        readTime: '3 min read',
       },
     ];
   }
