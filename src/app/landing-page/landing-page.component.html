@@ -1,43 +1,83 @@
-<div class="row text-center main-div" id="landing-page">
-  <div class="col-lg-5 col-sm-12 text-center">
-    <div class="name">Movin Silva</div>
-    <div class="row personal justify-content-center">
-      <div class="photo-bg col-4">
-        <img class="photo" src="./assets/me.png" />
+<div class="landing-container" id="landing-page">
+  <div class="hero-section">
+    <!-- Left side - Personal Info -->
+    <div class="personal-info">
+      <div class="name-section">
+        <div class="greeting">Hi, I'm</div>
+        <div class="name">Movin Silva</div>
       </div>
-      <div class="col-5 my-auto">
-        <div class="row justify-content-start">
+
+      <div class="photo-section">
+        <div class="photo-container">
+          <img class="photo" src="./assets/me.png" alt="Movin Silva" />
+          <div class="photo-glow"></div>
+        </div>
+      </div>
+
+      <div class="social-section">
+        <div class="social-title">Connect with me</div>
+        <div class="social-links-container">
           <a
-            class="social-links"
+            class="social-link"
             href="https://www.linkedin.com/in/movin-silva-9b8ab01b2/"
             target="_blank"
           >
-            <img class="social-icons" src="./assets/linkedin.png" /> LinkedIn</a
-          >
+            <div class="social-icon-wrapper">
+              <img
+                class="social-icon"
+                src="./assets/linkedin.png"
+                alt="LinkedIn"
+              />
+            </div>
+            <span>LinkedIn</span>
+          </a>
           <a
-            class="social-links mt-md-5"
+            class="social-link"
             href="https://medium.com/@movin_silva"
             target="_blank"
           >
-            <img class="social-icons" src="./assets/medium.png" /> Medium
+            <div class="social-icon-wrapper">
+              <img class="social-icon" src="./assets/medium.png" alt="Medium" />
+            </div>
+            <span>Medium</span>
           </a>
           <a
-            class="social-links mt-md-5"
+            class="social-link"
             href="https://github.com/movinsilva"
             target="_blank"
           >
-            <img class="social-icons github-icon" src="./assets/github.png" />
-            Github
+            <div class="social-icon-wrapper">
+              <img
+                class="social-icon github-icon"
+                src="./assets/github.png"
+                alt="GitHub"
+              />
+            </div>
+            <span>GitHub</span>
           </a>
         </div>
       </div>
+
+      <!-- <div class="cta-section">
+        <a href="https://read.cv/movin" target="_blank" class="cv-button">
+          <span>View My CV</span>
+          <svg class="arrow-icon" viewBox="0 0 24 24">
+            <path d="M5 12h14m-7-7l7 7-7 7" />
+          </svg>
+        </a>
+      </div> -->
     </div>
 
-    <!-- <a href="https://read.cv/movin" target="_blank">
-      <div class="cv-button">Check out my CV here</div>
-    </a> -->
+    <!-- Right side - Intro -->
+    <div class="intro-section">
+      <app-intro></app-intro>
+    </div>
   </div>
-  <div class="col-lg-7 col-sm-12">
-    <app-intro></app-intro>
+
+  <!-- Floating elements for visual appeal -->
+  <div class="floating-elements">
+    <div class="float-element float-1"></div>
+    <div class="float-element float-2"></div>
+    <div class="float-element float-3"></div>
   </div>
 </div>
