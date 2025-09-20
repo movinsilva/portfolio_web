@@ -1,26 +1,23 @@
 <div class="main-div" id="projects">
-    <h1>Projects</h1>
-<div class="row">
-    <div class="project-list col-lg-6">
-        <ng-container *ngFor="let project of projects;">
-            <app-single-project [project]="project"></app-single-project>
-        </ng-container>
+  <h1>Projects</h1>
+  <div class="row">
+    <div class="col-lg-6" *ngFor="let project of projects">
+      <app-single-project [project]="project"></app-single-project>
     </div>
-    <div class="project-list col-lg-6">
-        <ng-container *ngFor="let project of projects2;">
-            <app-single-project [project]="project"></app-single-project>
-        </ng-container>
-    </div>
-</div>
+  </div>
 
-<div class="container text-center">
+  <div class="container text-center">
     <a href="https://github.com/movinsilva" target="_blank">
-        <div class="more-proj-container row justify-content-center align-items-center">
-            <div class="more-projects col-md-auto">Check out my Github Repositories for more projects</div>
-            <button class="circle-button col-md-auto" >
-                <span class="arrow">&#10140;</span>
-            </button>
+      <div
+        class="more-proj-container row justify-content-center align-items-center"
+      >
+        <div class="more-projects col-md-auto">
+          Check out my Github Repositories for more projects
         </div>
+        <button class="circle-button col-md-auto">
+          <span class="arrow">&#10140;</span>
+        </button>
+      </div>
     </a>
-</div>
+  </div>
 </div>
