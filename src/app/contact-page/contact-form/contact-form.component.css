@@ -2,7 +2,6 @@
 .form-title {
   font-size: 2.5rem;
   color: goldenrod;
-  font-weight: 700;
   padding: 1rem;
 }
 
@@ -45,8 +44,8 @@
 
 /* Form Controls */
 .form-control {
-  background: rgba(255, 255, 255, 0.08);
-  border: 2px solid rgba(255, 179, 132, 0.3);
+  background: transparent;
+  border: 0.5px solid goldenrod;
   border-radius: 10px;
   padding: 12px 12px 12px 40px;
   color: white;
@@ -55,7 +54,7 @@
   backdrop-filter: blur(5px);
 }
 .form-control::placeholder {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.545);
   font-weight: 300;
 }
 
@@ -100,13 +99,13 @@ textarea.form-control {
 } /* Submit Button */
 /* Submit Button */
 .submit-button {
-  background: linear-gradient(135deg, #ffe799 0%, goldenrod 60%);
+  background: goldenrod;
   border: none;
   border-radius: 25px;
   padding: 12px 30px;
   font-size: 1rem;
   font-weight: 600;
-  color: white;
+  color: rgb(0, 0, 0);
   transition: all 0.3s ease;
   box-shadow: 0 8px 25px rgba(255, 179, 132, 0.3);
   text-transform: uppercase;

@@ -20,14 +20,9 @@
         <strong>Oops!</strong> {{ errorMessage }}
       </div>
 
-      <form
-        [formGroup]="FormData"
-        (ngSubmit)="onSubmit(FormData.value)"
-        class="contact-form"
-      >
+      <form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
         <!-- Name Field -->
         <div class="form-group mb-3">
-          <label for="name" class="form-label">Full Name</label>
           <div class="input-wrapper">
             <i class="fas fa-user input-icon"></i>
             <input
@@ -38,7 +33,7 @@
               [class.is-valid]="
                 FormData.get('name')?.valid && FormData.get('name')?.touched
               "
-              placeholder="Enter your full name"
+              placeholder="Enter your name"
               formControlName="name"
             />
           </div>
@@ -49,7 +44,6 @@
 
         <!-- Email Field -->
         <div class="form-group mb-3">
-          <label for="email" class="form-label">Email Address</label>
           <div class="input-wrapper">
             <i class="fas fa-envelope input-icon"></i>
             <input
@@ -71,7 +65,6 @@
 
         <!-- Message Field -->
         <div class="form-group mb-3">
-          <label for="message" class="form-label">Message</label>
           <div class="input-wrapper">
             <i class="fas fa-comment input-icon textarea-icon"></i>
             <textarea
