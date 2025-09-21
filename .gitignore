@@ -47,11 +47,9 @@ Thumbs.db
 .env.production
 .env.development
 
-# Keep environment templates but ignore actual environment files
+# Keep environment template but ignore actual environment file
 src/environments/environment.ts
-src/environments/environment.prod.ts
 !src/environments/environment.template.ts
-!src/environments/environment.prod.template.ts
 
 # Environment configuration (keep .example files)
 !.env.example
