@@ -40,3 +40,16 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# Environment files with sensitive data
+.env
+.env.local
+.env.production
+.env.development
+
+# Keep environment template but ignore actual environment file
+src/environments/environment.ts
+!src/environments/environment.template.ts
+
+# Environment configuration (keep .example files)
+!.env.example

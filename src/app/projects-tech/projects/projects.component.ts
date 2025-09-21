@@ -5,17 +5,15 @@ import { Project } from '../../types/Project';
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.css']
+  styleUrls: ['./projects.component.css'],
 })
 export class ProjectsComponent {
+  projects: Project[] = [];
+
   constructor(private projectsService: ProjectsService) {}
 
-  projects: Project[] = []
-  projects2: Project[] = []
-
   ngOnInit() {
-    this.projects = this.projectsService.getProjects()
-    this.projects2 = this.projectsService.getProjects2()
+    // Get all projects
+    this.projects = this.projectsService.getAllProjects();
   }
-
 }

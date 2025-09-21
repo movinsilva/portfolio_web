@@ -1,23 +1,17 @@
-<a href={{project.link}}>
-    <div class="project-container">
-        <div class="row justify-content-between">
-            <div class="col-md-8 col-sm-10">
-                <div class="title">{{project.title}}</div>
-                <div class="name">{{project.name}}</div>
-                <div class="description">{{project.description}}</div>
-                    <div class="technology col-10">{{project.technology}}</div>
-
-                    
-                
-            </div>
-            <div class="col-md-2 col-sm-2 go-btn">
-                <button class="circle-button col-2" [ngClass]="{'animated-project': project.applyAnimation}">
-                    <span class="arrow">&#10140;</span>
-                </button>
-
-            </div>
-
-        </div>
-        
+<a href="{{ project.link }}">
+  <div class="project-container">
+    <div class="row justify-content-between">
+      <div class="col-md-8 col-sm-10">
+        <div class="title">{{ project.title }}</div>
+        <div class="name">{{ project.name }}</div>
+        <div class="description">{{ project.description }}</div>
+        <div class="technology col-10">{{ project.technology }}</div>
+      </div>
+      <div class="col-md-2 col-sm-2 go-btn">
+        <button class="circle-button col-2 animated-project">
+          <span class="arrow">&#10140;</span>
+        </button>
+      </div>
     </div>
+  </div>
 </a>
